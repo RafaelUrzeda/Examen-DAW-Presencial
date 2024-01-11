@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class bloque1 {
 
+    static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         int menu;
         do { 
-            Scanner sc = new Scanner(System.in);
             menu = menu();
             switch (menu) {
                 case 0:
@@ -38,8 +38,8 @@ public class bloque1 {
                     System.out.println("Opción Invalida");
                     menu = menu();
             }
-            sc.close();
         } while (menu != 0); 
+
     }
 
     public static void decimalBinario(int decimal) {
@@ -96,7 +96,6 @@ public class bloque1 {
     }
 
     public static int menu() {
-        Scanner sc = new Scanner(System.in);
         System.out.println("""
                 Tria una de les següents opcions:
                 1. Decimal a binari
@@ -105,7 +104,6 @@ public class bloque1 {
                 4. Calcular parells de 0 fins a n
                 0. Sortir""");
         int menu = sc.nextInt();
-        sc.close();
         return menu;
     }
 
