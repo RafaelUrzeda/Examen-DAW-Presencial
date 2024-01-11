@@ -4,12 +4,14 @@ Este repositorio contiene dos ejercicios de Java, uno en el bloque 1 y otro en e
 
 ## Bloque 1
 
-El ejercicio del bloque 1 consiste en un menú con cuatro opciones:
+El ejercicio del bloque 1 consiste en un menú con cinco opciones:
 
+0. Salir del programa
 1. Decimal a binario
 2. Binari a decimal
 3. És parell?
 4. Calcular parells de 0 fins a n
+
 
 Las opciones 1 y 2 convierten un número decimal o binario, respectivamente, al otro formato. La opción 3 indica si un número es par o no. La opción 4 imprime todos los números pares desde 0 hasta un número dado.
 
