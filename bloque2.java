@@ -21,10 +21,10 @@ public class bloque2 {
                     1. Líquids
                     2. Sòlids""");
             eleccion = sc.nextInt();
-            if (eleccion != 1 || eleccion != 2) {
+            if (eleccion != 1 && eleccion != 2) {
                 System.out.println("No és una opció vàlida");
             }
-        } while (eleccion != 1 || eleccion != 2);
+        } while (eleccion != 1 && eleccion != 2);
 
         // Pregunta y recoge cada variable necesaria
         System.out.println("Quants centimetres té la cisterna?");
@@ -45,14 +45,14 @@ public class bloque2 {
 
         //Calculamos cuantos vijes debe hacer y informamos al usuario
         viajes = (int) Math.ceil(metrosCubicos/volumenM2);
-        System.out.println("Has de fer " + viajes + "viatges");
+        System.out.println("Has de fer " + viajes + " viatges");
 
 
     }
 
     public static double volumCilindre(float radio, float longitud) {
-        // Aplicamos la formula correspondiente y devolvemos el resultado
-        double volumen = radio * Math.pow(Math.PI, 2) * longitud;
+        // Aplicamos la fórmula correspondiente y devolvemos el resultado
+        double volumen = Math.PI * Math.pow(radio, 2) * longitud;
         return volumen;
     }
 
